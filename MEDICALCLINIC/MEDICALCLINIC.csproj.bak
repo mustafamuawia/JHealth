@@ -1,0 +1,2313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E4E053D-7719-4C2E-9C24-2818B090DE25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MEDICALCLINIC</RootNamespace>
+    <AssemblyName>MEDICALCLINIC</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\HASH\Desktop\publish clinic\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>164</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MEDICALCLINIC.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1F0A7F060150F2698F7B7948651F152B91CB4F1B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MEDICALCLINIC_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cardiogram.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>C:\Users\DEVELOPER\Downloads\AForge.Video.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>C:\Users\DEVELOPER\Downloads\AForge.Video.DirectShow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Assembly.Software.Crystal.Reports.2010.Printing, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Assembly.Software.Crystal.Reports.2010.Printing.1.0.1\lib\net35\Assembly.Software.Crystal.Reports.2010.Printing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Assembly.Software.Utilities, Version=1.0.1.0, Culture=neutral, PublicKeyToken=b43ab951e5782031, processorArchitecture=MSIL">
+      <HintPath>..\packages\Assembly.Software.Utilities.1.0.1\lib\net20\Assembly.Software.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\DEVELOPER\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CloudToolkitN6">
+      <HintPath>C:\Users\DEVELOPER\Downloads\CloudToolkitN6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CRVsPackageLib, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.13.0.5.891\lib\net40\CRVsPackageLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.13.0.5.891\lib\net40\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.CrystalReports.TemplateEngine.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.Data.AdoDotNetInterop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.Enterprise.Viewing.ReportSource.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.ReportSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.13.0.5.891\lib\net40\CrystalDecisions.VSDesigner.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="D2L.Extensibility.AuthSdk, Version=1.2.1.0, Culture=neutral, PublicKeyToken=bd294358982f248f, processorArchitecture=MSIL">
+      <HintPath>..\packages\D2L.Extensibility.AuthSdk.1.2.1.0\lib\net40\D2L.Extensibility.AuthSdk.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.Common, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.PlugInCore, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.UserControls, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.Data.v6.3, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraBars.v6.3, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Parser, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Platform, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Elegant.Ui.Common">
+      <HintPath>C:\Users\DEVELOPER\Downloads\Elegant.Ui.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ELestBox">
+      <HintPath>C:\Users\DEVELOPER\Downloads\ELestBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\EnvDTE.8.0.2\lib\net10\EnvDTE.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\FlashControlV71.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FoxLearn.License">
+      <HintPath>E:\PROGRAMMING LANGAUGE\FoxLearn.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Publisher, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Interop.Microsoft.Office.Interop.Publisher.2.2.0.0\lib\net40\Interop.Microsoft.Office.Interop.Publisher.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Metro">
+      <HintPath>C:\Users\DEVELOPER\Downloads\Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.CoreUtility.15.0.26201\lib\net45\Microsoft.VisualStudio.CoreUtility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Debugger.Interop, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.VisualStudio.Debugger.Interop.8.0.50729\lib\net11\Microsoft.VisualStudio.Debugger.Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Debugger.Interop.11.0, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Debugger.Interop.11.0.11.0.50728\lib\net20\Microsoft.VisualStudio.Debugger.Interop.11.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Debugger.Interop.15.0, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Debugger.Interop.15.0.15.9.28307\lib\net20\Microsoft.VisualStudio.Debugger.Interop.15.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Debugger.InteropA, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.Debugger.InteropA.9.0.21023\lib\net10\Microsoft.VisualStudio.Debugger.InteropA.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualStudio.Language.Intellisense.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\VSSDK.OLE.Interop.7.0.4\lib\net20\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Package.LanguageService.14.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Package.LanguageService.14.0.14.3.25407\lib\Microsoft.VisualStudio.Package.LanguageService.14.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.14.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.14.0.14.3.25407\lib\Microsoft.VisualStudio.Shell.14.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Framework, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Framework.15.0.26201\lib\net45\Microsoft.VisualStudio.Shell.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VSSDK.Shell.Immutable.10.10.0.4\lib\net40\Microsoft.VisualStudio.Shell.Immutable.10.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.11.0, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Immutable.11.0.11.0.50727\lib\net45\Microsoft.VisualStudio.Shell.Immutable.11.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Immutable.12.0.12.0.21003\lib\net45\Microsoft.VisualStudio.Shell.Immutable.12.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.14.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Immutable.14.0.14.3.25407\lib\net45\Microsoft.VisualStudio.Shell.Immutable.14.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.10.0.10.0.30320\lib\net20\Microsoft.VisualStudio.Shell.Interop.10.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.11.0, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.11.0.11.0.61031\lib\net20\Microsoft.VisualStudio.Shell.Interop.11.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.12.0.12.0.30111\lib\net20\Microsoft.VisualStudio.Shell.Interop.12.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.15.5.DesignTime, Version=15.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.15.5.DesignTime.15.6.27413\lib\net20\Microsoft.VisualStudio.Shell.Interop.15.5.DesignTime.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.8.0.8.0.50728\lib\net11\Microsoft.VisualStudio.Shell.Interop.8.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.VisualStudio.Shell.Interop.9.0.9.0.30729\lib\Microsoft.VisualStudio.Shell.Interop.9.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Data, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualStudio.Text.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.UI, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualStudio.Text.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\New folder\New folder\MEDICALCLINIC\MEDICALCLINIC\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.VisualStudio.TextManager.Interop.10.0.10.0.30320\lib\net20\Microsoft.VisualStudio.TextManager.Interop.10.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.11.0, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.VisualStudio.TextManager.Interop.11.0.11.0.61032\lib\net20\Microsoft.VisualStudio.TextManager.Interop.11.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.VisualStudio.TextManager.Interop.12.0.12.0.30112\lib\net20\Microsoft.VisualStudio.TextManager.Interop.12.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\VSSDK.TextManager.Interop.8.8.0.4\lib\net20\Microsoft.VisualStudio.TextManager.Interop.8.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PureComponents.ActionSet">
+      <HintPath>C:\Users\DEVELOPER\Downloads\PureComponents.ActionSet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PureComponents.EntrySet">
+      <HintPath>C:\Users\DEVELOPER\Downloads\PureComponents.EntrySet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PureComponents.ScheduleSet">
+      <HintPath>C:\Users\DEVELOPER\Downloads\PureComponents.ScheduleSet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RichTextBoxPrintCtrl">
+      <HintPath>C:\Users\DEVELOPER\Downloads\RichTextBoxPrintCtrl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\CrystalReports.VisualStudio2015.x64.2.0.0\lib\ShockwaveFlashObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\stdole.7.0.3303\lib\net10\stdole.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\VSLangProj.7.0.3301\lib\net10\VSLangProj.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VSLangProj2, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\VSLangProj2.7.0.5001\lib\net11\VSLangProj2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VSLangProj80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\VSLangProj80.8.0.50728\lib\net11\VSLangProj80.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADDPICT_GENE\FRM_ADD_PIC_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDPICT_GENE\FRM_ADD_PIC_NEW.Designer.cs">
+      <DependentUpon>FRM_ADD_PIC_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADDPICT_GENE\FRM_SEARCH_ADD_PIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDPICT_GENE\FRM_SEARCH_ADD_PIC.Designer.cs">
+      <DependentUpon>FRM_SEARCH_ADD_PIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bin\Debug\PRIN_BOOKING.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRIN_BOOKING.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BOOKING\FRM_ALLBOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOOKING\FRM_ALLBOOK.designer.cs">
+      <DependentUpon>FRM_ALLBOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKING\FRM_BOOKING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOOKING\FRM_BOOKING.Designer.cs">
+      <DependentUpon>FRM_BOOKING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKING\FRM_FEATURE_BOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOOKING\FRM_FEATURE_BOOK.designer.cs">
+      <DependentUpon>FRM_FEATURE_BOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKING\FRM_SEARCH_BOOKING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOOKING\FRM_SEARCH_BOOKING.Designer.cs">
+      <DependentUpon>FRM_SEARCH_BOOKING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLINIC\FRM_CLNIC_W_SALES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLINIC\FRM_CLNIC_W_SALES.Designer.cs">
+      <DependentUpon>FRM_CLNIC_W_SALES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLS.cs" />
+    <Compile Include="CR_BUTTONS\FRM_DES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_BUTTONS\FRM_DES.Designer.cs">
+      <DependentUpon>FRM_DES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CR_BUTTONS\FRM_DRAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_BUTTONS\FRM_DRAGE.Designer.cs">
+      <DependentUpon>FRM_DRAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CR_BUTTONS\FRM_STATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_BUTTONS\FRM_STATE.Designer.cs">
+      <DependentUpon>FRM_STATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CR_BUTTONS\FRM_TOOTH_DRAG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR_BUTTONS\FRM_TOOTH_DRAG.Designer.cs">
+      <DependentUpon>FRM_TOOTH_DRAG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_BACKUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_BACKUP.Designer.cs">
+      <DependentUpon>FRM_BACKUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_CONTAIN_BUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_CONTAIN_BUP.Designer.cs">
+      <DependentUpon>FRM_CONTAIN_BUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_DB.Designer.cs">
+      <DependentUpon>FRM_DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_OPEN_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_OPEN_SETTING.Designer.cs">
+      <DependentUpon>FRM_OPEN_SETTING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_RESTORE_BAKUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_RESTORE_BAKUP.Designer.cs">
+      <DependentUpon>FRM_RESTORE_BAKUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_TRAIL_VERSION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_CONFIG\FRM_TRAIL_VERSION.Designer.cs">
+      <DependentUpon>FRM_TRAIL_VERSION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_IMG_PER_BOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_IMG_PER_BOOK.Designer.cs">
+      <DependentUpon>FRM_IMG_PER_BOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_OPERTION_PRICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_OPERTION_PRICE.Designer.cs">
+      <DependentUpon>FRM_OPERTION_PRICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_SHOW_ALL_BOOKING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_SHOW_ALL_BOOKING.Designer.cs">
+      <DependentUpon>FRM_SHOW_ALL_BOOKING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_SHOW_TOOTH_DETAILS_BOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_SHOW_TOOTH_DETAILS_BOOK.Designer.cs">
+      <DependentUpon>FRM_SHOW_TOOTH_DETAILS_BOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_TEETH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_TEETH.Designer.cs">
+      <DependentUpon>FRM_TEETH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_TOOTH_NOTE_BOOKING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_TOOTH_NOTE_BOOKING.Designer.cs">
+      <DependentUpon>FRM_TOOTH_NOTE_BOOKING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_VIDEO_PLAYER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\FRM_VIDEO_PLAYER.Designer.cs">
+      <DependentUpon>FRM_VIDEO_PLAYER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\LAST_BOOKING_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\LAST_BOOKING_UC.Designer.cs">
+      <DependentUpon>LAST_BOOKING_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSES\UC_TOOTH_BOOK_NO_DETAILS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DIAGNOSES\UC_TOOTH_BOOK_NO_DETAILS.Designer.cs">
+      <DependentUpon>UC_TOOTH_BOOK_NO_DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOCTOR\FRM_DOCTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOCTOR\FRM_DOCTOR.Designer.cs">
+      <DependentUpon>FRM_DOCTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SHOW_FULL_IMG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SHOW_FULL_IMG.Designer.cs">
+      <DependentUpon>FRM_SHOW_FULL_IMG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM__CLINC_DIAGNOSES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM__CLINC_DIAGNOSES.Designer.cs">
+      <DependentUpon>FRM__CLINC_DIAGNOSES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRMREGSRATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRMREGSRATION.Designer.cs">
+      <DependentUpon>FRMREGSRATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRM_CONTAINER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRM_CONTAINER.Designer.cs">
+      <DependentUpon>FRM_CONTAINER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRM_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRM_INFO.Designer.cs">
+      <DependentUpon>FRM_INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRM_LICENCE_GENERATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LICENCE KEYS\FRM_LICENCE_GENERATION.Designer.cs">
+      <DependentUpon>FRM_LICENCE_GENERATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\FRM_AUTHONICATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\FRM_AUTHONICATION.Designer.cs">
+      <DependentUpon>FRM_AUTHONICATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEDIAFILE.cs" />
+    <Compile Include="OPERATION_PP\FRM_ALL_OPERTION_PRICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION_PP\FRM_ALL_OPERTION_PRICE.Designer.cs">
+      <DependentUpon>FRM_ALL_OPERTION_PRICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION_PP\FRM_BOOK_TOOTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION_PP\FRM_BOOK_TOOTH.Designer.cs">
+      <DependentUpon>FRM_BOOK_TOOTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPERATION_PP\FRM_PAY_OPERTION_PRICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPERATION_PP\FRM_PAY_OPERTION_PRICE.Designer.cs">
+      <DependentUpon>FRM_PAY_OPERTION_PRICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONS\FRM_MEDICAL_HISTORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONS\FRM_MEDICAL_HISTORY.Designer.cs">
+      <DependentUpon>FRM_MEDICAL_HISTORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONS\FRM_PERSON_IMAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONS\FRM_PERSON_IMAGE.Designer.cs">
+      <DependentUpon>FRM_PERSON_IMAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\CRT_PRINT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRT_PRINT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MAIN\FADEIN_FADEOUT1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\FADEIN_FADEOUT1.Designer.cs">
+      <DependentUpon>FADEIN_FADEOUT1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\FRM_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\FRM_LOGIN.Designer.cs">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\FRM_MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\FRM_MAIN.Designer.cs">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_IMGE_PRSN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_IMGE_PRSN.Designer.cs">
+      <DependentUpon>FRM_IMGE_PRSN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICAL_CLINIC_DBDataSet.cs">
+      <DependentUpon>MEDICAL_CLINIC_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICAL_CLINIC_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MEDICAL_CLINIC_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONS\FRM_CONVERT_TO_DOCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONS\FRM_CONVERT_TO_DOCT.Designer.cs">
+      <DependentUpon>FRM_CONVERT_TO_DOCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONS\FRM_PERSON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONS\FRM_PERSON.Designer.cs">
+      <DependentUpon>FRM_PERSON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONS\FRM_SEARCH_PERSON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONS\FRM_SEARCH_PERSON.Designer.cs">
+      <DependentUpon>FRM_SEARCH_PERSON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONS\FRM_SEARCH_PER_FOR_CBOX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONS\FRM_SEARCH_PER_FOR_CBOX.Designer.cs">
+      <DependentUpon>FRM_SEARCH_PER_FOR_CBOX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\FRM_PRINT_bOOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\FRM_PRINT_bOOK.Designer.cs">
+      <DependentUpon>FRM_PRINT_bOOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\FRM_TOOTH_PRINT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\FRM_TOOTH_PRINT.Designer.cs">
+      <DependentUpon>FRM_TOOTH_PRINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PPRINT_PURCHES\FRM_RPT_PRUCHES_F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PPRINT_PURCHES\FRM_RPT_PRUCHES_F.Designer.cs">
+      <DependentUpon>FRM_RPT_PRUCHES_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PPRINT_PURCHES\FRM_RPT_PURCHES_ONE_DATE_F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PPRINT_PURCHES\FRM_RPT_PURCHES_ONE_DATE_F.Designer.cs">
+      <DependentUpon>FRM_RPT_PURCHES_ONE_DATE_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PPRINT_PURCHES\FRM_RPT_PURCHES_TOW_DATE_F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PPRINT_PURCHES\FRM_RPT_PURCHES_TOW_DATE_F.Designer.cs">
+      <DependentUpon>FRM_RPT_PURCHES_TOW_DATE_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINTT.Designer.cs">
+      <DependentUpon>PRINTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_BOOKTYPE\FRM_ONE_DATE_BOOOKT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_BOOKTYPE\FRM_ONE_DATE_BOOOKT.Designer.cs">
+      <DependentUpon>FRM_ONE_DATE_BOOOKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_MONEY\FRM_MOEY_G.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_MONEY\FRM_MOEY_G.Designer.cs">
+      <DependentUpon>FRM_MOEY_G.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_MONEY\FRM_MONEY_ONE_DATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_MONEY\FRM_MONEY_ONE_DATE.Designer.cs">
+      <DependentUpon>FRM_MONEY_ONE_DATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_MONEY\FRM_MONEY_TOW_DATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_MONEY\FRM_MONEY_TOW_DATE.Designer.cs">
+      <DependentUpon>FRM_MONEY_TOW_DATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_G.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_G.Designer.cs">
+      <DependentUpon>FRM_PER_MON_G.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_ONE_DATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_ONE_DATE.Designer.cs">
+      <DependentUpon>FRM_PER_MON_ONE_DATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_TOW_DATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_TOW_DATE.Designer.cs">
+      <DependentUpon>FRM_PER_MON_TOW_DATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_BOOKTYPE\FRM_TOW_DATE_BOOKING_t.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_BOOKTYPE\FRM_TOW_DATE_BOOKING_t.Designer.cs">
+      <DependentUpon>FRM_TOW_DATE_BOOKING_t.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_BOOKTYPE\FRM_PRINT_BOOKT_G.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_BOOKTYPE\FRM_PRINT_BOOKT_G.Designer.cs">
+      <DependentUpon>FRM_PRINT_BOOKT_G.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_DOCTOR_SEAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_DOCTOR_SEAL.Designer.cs">
+      <DependentUpon>FRM_DOCTOR_SEAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_RPT_SALES_F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_RPT_SALES_F.Designer.cs">
+      <DependentUpon>FRM_RPT_SALES_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_RPT_SALES_ONE_DATE_F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_RPT_SALES_ONE_DATE_F.Designer.cs">
+      <DependentUpon>FRM_RPT_SALES_ONE_DATE_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_RPT_SALES_TOW_DATE_F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_RPT_SALES_TOW_DATE_F.Designer.cs">
+      <DependentUpon>FRM_RPT_SALES_TOW_DATE_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_SALES_CATEG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PRINT_SALES\FRM_SALES_CATEG.Designer.cs">
+      <DependentUpon>FRM_SALES_CATEG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\PRIN_BOOKING.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRIN_BOOKING.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRINT\PROFIT\FRM_PROFIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\PROFIT\FRM_PROFIT.Designer.cs">
+      <DependentUpon>FRM_PROFIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\TEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINT\TEST.Designer.cs">
+      <DependentUpon>TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINT\TOOTH_BOOKING_PRINT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TOOTH_BOOKING_PRINT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PURCHES\FRM_PURCHERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHES\FRM_PURCHERS.Designer.cs">
+      <DependentUpon>FRM_PURCHERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NEWFRM_PRINT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NEWFRM_PRINT.Designer.cs">
+      <DependentUpon>NEWFRM_PRINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHES\FRM_SEARCH_PURCHES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHES\FRM_SEARCH_PURCHES.Designer.cs">
+      <DependentUpon>FRM_SEARCH_PURCHES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_DISEAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_DISEAS.Designer.cs">
+      <DependentUpon>FRM_BOOKING_DISEAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_DOCTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_DOCTOR.Designer.cs">
+      <DependentUpon>FRM_BOOKING_DOCTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_PERSON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_PERSON.Designer.cs">
+      <DependentUpon>FRM_BOOKING_PERSON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_TYPE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_BOOKING_TYPE.Designer.cs">
+      <DependentUpon>FRM_BOOKING_TYPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_IMAGE_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_IMAGE_.Designer.cs">
+      <DependentUpon>FRM_IMAGE_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_KSHFIA_TYPE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_KSHFIA_TYPE.Designer.cs">
+      <DependentUpon>FRM_KSHFIA_TYPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_PROFIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_PROFIT.Designer.cs">
+      <DependentUpon>FRM_PROFIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_PURCHES_RPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_PURCHES_RPT.Designer.cs">
+      <DependentUpon>FRM_PURCHES_RPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT.Designer.cs">
+      <DependentUpon>FRM_RPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_BOOK_TYPE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_BOOK_TYPE.Designer.cs">
+      <DependentUpon>FRM_RPT_BOOK_TYPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_MONY_AVAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_MONY_AVAL.Designer.cs">
+      <DependentUpon>FRM_RPT_MONY_AVAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_PERSON_MONEY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_PERSON_MONEY.Designer.cs">
+      <DependentUpon>FRM_RPT_PERSON_MONEY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_SALES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_RPT_SALES.Designer.cs">
+      <DependentUpon>FRM_RPT_SALES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_BOX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_BOX.Designer.cs">
+      <DependentUpon>FRM_R_BOX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_BUTY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_BUTY.Designer.cs">
+      <DependentUpon>FRM_R_BUTY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_OPERATONS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_OPERATONS.Designer.cs">
+      <DependentUpon>FRM_R_OPERATONS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_SALES_PURCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_SALES_PURCH.Designer.cs">
+      <DependentUpon>FRM_R_SALES_PURCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_REPORT_TOOTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_REPORT_TOOTH.Designer.cs">
+      <DependentUpon>FRM_REPORT_TOOTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_TOOTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT\FRM_R_TOOTH.Designer.cs">
+      <DependentUpon>FRM_R_TOOTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\FRM_SEARCH_ACCOUNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\FRM_SEARCH_ACCOUNT.Designer.cs">
+      <DependentUpon>FRM_SEARCH_ACCOUNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\FRM_SANAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\FRM_SANAD.Designer.cs">
+      <DependentUpon>FRM_SANAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\FRM_SEARCH_SANAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\FRM_SEARCH_SANAD.Designer.cs">
+      <DependentUpon>FRM_SEARCH_SANAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEACRH_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEACRH_LOGIN.Designer.cs">
+      <DependentUpon>FRM_SEACRH_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_CLIENT.Designer.cs">
+      <DependentUpon>FRM_SEARCH_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_EXPENSES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_EXPENSES.Designer.cs">
+      <DependentUpon>FRM_SEARCH_EXPENSES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_BOOKING_T.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_BOOKING_T.Designer.cs">
+      <DependentUpon>FRM_SEARCH_BOOKING_T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DESC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DESC.Designer.cs">
+      <DependentUpon>FRM_SEARCH_DESC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DIAESE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DIAESE.Designer.cs">
+      <DependentUpon>FRM_SEARCH_DIAESE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DRAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DRAGE.Designer.cs">
+      <DependentUpon>FRM_SEARCH_DRAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_ERRADAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_ERRADAT.Designer.cs">
+      <DependentUpon>FRM_SEARCH_ERRADAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_GRP_DRAG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_GRP_DRAG.Designer.cs">
+      <DependentUpon>FRM_SEARCH_GRP_DRAG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_IMG_PER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_IMG_PER.Designer.cs">
+      <DependentUpon>FRM_SEARCH_IMG_PER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_ITEMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_ITEMS.Designer.cs">
+      <DependentUpon>FRM_SEARCH_ITEMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_MAJOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_MAJOR.Designer.cs">
+      <DependentUpon>FRM_SEARCH_MAJOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_CATEGORIES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_CATEGORIES.Designer.cs">
+      <DependentUpon>FRM_SEARCH_CATEGORIES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DOCTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_DOCTOR.Designer.cs">
+      <DependentUpon>FRM_SEARCH_DOCTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_STATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_STATE.Designer.cs">
+      <DependentUpon>FRM_SEARCH_STATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_TOOHT_DRAG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SANAD\SEARCH\FRM_SEARCH_TOOHT_DRAG.Designer.cs">
+      <DependentUpon>FRM_SEARCH_TOOHT_DRAG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SELAS\FRM_SEALS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELAS\FRM_SEALS.Designer.cs">
+      <DependentUpon>FRM_SEALS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SELAS\FRM_SEARCH_ORDER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELAS\FRM_SEARCH_ORDER.Designer.cs">
+      <DependentUpon>FRM_SEARCH_ORDER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SELAS\FRM_SEARCH_SELAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELAS\FRM_SEARCH_SELAS.Designer.cs">
+      <DependentUpon>FRM_SEARCH_SELAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_BOOK_TYPE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_BOOK_TYPE.Designer.cs">
+      <DependentUpon>FRM_BOOK_TYPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_BOX_SETTINGS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_BOX_SETTINGS.Designer.cs">
+      <DependentUpon>FRM_BOX_SETTINGS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_BUTY_SETTINGS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_BUTY_SETTINGS.Designer.cs">
+      <DependentUpon>FRM_BUTY_SETTINGS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_CATEGORIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_CATEGORIS.Designer.cs">
+      <DependentUpon>FRM_CATEGORIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_CLIENT.Designer.cs">
+      <DependentUpon>FRM_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_DESC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_DESC.Designer.cs">
+      <DependentUpon>FRM_DESC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_DISEASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_DISEASE.Designer.cs">
+      <DependentUpon>FRM_DISEASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_DOCTOR_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_DOCTOR_SETTING.Designer.cs">
+      <DependentUpon>FRM_DOCTOR_SETTING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_DRAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_DRAGE.Designer.cs">
+      <DependentUpon>FRM_DRAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_DRAG_TOOTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_DRAG_TOOTH.Designer.cs">
+      <DependentUpon>FRM_DRAG_TOOTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_EXPENSES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_EXPENSES.Designer.cs">
+      <DependentUpon>FRM_EXPENSES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_GENERAL_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_GENERAL_SETTING.Designer.cs">
+      <DependentUpon>FRM_GENERAL_SETTING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_GROUP_DRAG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_GROUP_DRAG.Designer.cs">
+      <DependentUpon>FRM_GROUP_DRAG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_INCOMING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_INCOMING.Designer.cs">
+      <DependentUpon>FRM_INCOMING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_ITEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_ITEM.Designer.cs">
+      <DependentUpon>FRM_ITEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_ITEMS_SETTINGS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_ITEMS_SETTINGS.Designer.cs">
+      <DependentUpon>FRM_ITEMS_SETTINGS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_LIST_PRINTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_LIST_PRINTER.Designer.cs">
+      <DependentUpon>FRM_LIST_PRINTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_MAJOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_MAJOR.Designer.cs">
+      <DependentUpon>FRM_MAJOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_NEW_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_NEW_SETTING.Designer.cs">
+      <DependentUpon>FRM_NEW_SETTING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_SETTING.Designer.cs">
+      <DependentUpon>FRM_SETTING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_SET_DOCOTR_PRICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_SET_DOCOTR_PRICE.Designer.cs">
+      <DependentUpon>FRM_SET_DOCOTR_PRICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_STATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_STATE.Designer.cs">
+      <DependentUpon>FRM_STATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_STORE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_STORE.Designer.cs">
+      <DependentUpon>FRM_STORE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FRM_TOOTH_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FRM_TOOTH_SETTING.Designer.cs">
+      <DependentUpon>FRM_TOOTH_SETTING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TOOTH_OP\FRM_CLASS_TOOTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_CLASS_TOOTH.Designer.cs">
+      <DependentUpon>FRM_CLASS_TOOTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_CLASS_T.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_CLASS_T.Designer.cs">
+      <DependentUpon>FRM_SEARCH_CLASS_T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_TOOTH_CLASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_TOOTH_CLASS.Designer.cs">
+      <DependentUpon>FRM_SEARCH_TOOTH_CLASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_TREATMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_TREATMENT.Designer.cs">
+      <DependentUpon>FRM_SEARCH_TREATMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_TREATMENT_T.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_SEARCH_TREATMENT_T.Designer.cs">
+      <DependentUpon>FRM_SEARCH_TREATMENT_T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_TOOTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_TOOTH.Designer.cs">
+      <DependentUpon>FRM_TOOTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_TREATMENT_TOOTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_TREATMENT_TOOTH.Designer.cs">
+      <DependentUpon>FRM_TREATMENT_TOOTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_X_RAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOTH_OP\FRM_X_RAY.Designer.cs">
+      <DependentUpon>FRM_X_RAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERSE\FRM_SEARCH_USERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERSE\FRM_SEARCH_USERS.Designer.cs">
+      <DependentUpon>FRM_SEARCH_USERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERSE\FRM_USERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERSE\FRM_USERS.Designer.cs">
+      <DependentUpon>FRM_USERS.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADDPICT_GENE\FRM_ADD_PIC_NEW.resx">
+      <DependentUpon>FRM_ADD_PIC_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDPICT_GENE\FRM_SEARCH_ADD_PIC.resx">
+      <DependentUpon>FRM_SEARCH_ADD_PIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\PRIN_BOOKING.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRIN_BOOKING.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOOKING\FRM_ALLBOOK.resx">
+      <DependentUpon>FRM_ALLBOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOOKING\FRM_BOOKING.resx">
+      <DependentUpon>FRM_BOOKING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOOKING\FRM_FEATURE_BOOK.resx">
+      <DependentUpon>FRM_FEATURE_BOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOOKING\FRM_SEARCH_BOOKING.resx">
+      <DependentUpon>FRM_SEARCH_BOOKING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLINIC\FRM_CLNIC_W_SALES.resx">
+      <DependentUpon>FRM_CLNIC_W_SALES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_BUTTONS\FRM_DES.resx">
+      <DependentUpon>FRM_DES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_BUTTONS\FRM_DRAGE.resx">
+      <DependentUpon>FRM_DRAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_BUTTONS\FRM_STATE.resx">
+      <DependentUpon>FRM_STATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_BUTTONS\FRM_TOOTH_DRAG.resx">
+      <DependentUpon>FRM_TOOTH_DRAG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_CONFIG\FRM_BACKUP.resx">
+      <DependentUpon>FRM_BACKUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_CONFIG\FRM_CONTAIN_BUP.resx">
+      <DependentUpon>FRM_CONTAIN_BUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_CONFIG\FRM_DB.resx">
+      <DependentUpon>FRM_DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_CONFIG\FRM_OPEN_SETTING.resx">
+      <DependentUpon>FRM_OPEN_SETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_CONFIG\FRM_RESTORE_BAKUP.resx">
+      <DependentUpon>FRM_RESTORE_BAKUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_CONFIG\FRM_TRAIL_VERSION.resx">
+      <DependentUpon>FRM_TRAIL_VERSION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\FRM_IMG_PER_BOOK.resx">
+      <DependentUpon>FRM_IMG_PER_BOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\FRM_OPERTION_PRICE.resx">
+      <DependentUpon>FRM_OPERTION_PRICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\FRM_SHOW_ALL_BOOKING.resx">
+      <DependentUpon>FRM_SHOW_ALL_BOOKING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\FRM_SHOW_TOOTH_DETAILS_BOOK.resx">
+      <DependentUpon>FRM_SHOW_TOOTH_DETAILS_BOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\FRM_TEETH.resx">
+      <DependentUpon>FRM_TEETH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\FRM_TOOTH_NOTE_BOOKING.resx">
+      <DependentUpon>FRM_TOOTH_NOTE_BOOKING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\FRM_VIDEO_PLAYER.resx">
+      <DependentUpon>FRM_VIDEO_PLAYER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\LAST_BOOKING_UC.resx">
+      <DependentUpon>LAST_BOOKING_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIAGNOSES\UC_TOOTH_BOOK_NO_DETAILS.resx">
+      <DependentUpon>UC_TOOTH_BOOK_NO_DETAILS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOCTOR\FRM_DOCTOR.resx">
+      <DependentUpon>FRM_DOCTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SHOW_FULL_IMG.resx">
+      <DependentUpon>FRM_SHOW_FULL_IMG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM__CLINC_DIAGNOSES.resx">
+      <DependentUpon>FRM__CLINC_DIAGNOSES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LICENCE KEYS\FRMREGSRATION.resx">
+      <DependentUpon>FRMREGSRATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LICENCE KEYS\FRM_CONTAINER.resx">
+      <DependentUpon>FRM_CONTAINER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LICENCE KEYS\FRM_INFO.resx">
+      <DependentUpon>FRM_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LICENCE KEYS\FRM_LICENCE_GENERATION.resx">
+      <DependentUpon>FRM_LICENCE_GENERATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\FRM_AUTHONICATION.resx">
+      <DependentUpon>FRM_AUTHONICATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION_PP\FRM_ALL_OPERTION_PRICE.resx">
+      <DependentUpon>FRM_ALL_OPERTION_PRICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION_PP\FRM_BOOK_TOOTH.resx">
+      <DependentUpon>FRM_BOOK_TOOTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPERATION_PP\FRM_PAY_OPERTION_PRICE.resx">
+      <DependentUpon>FRM_PAY_OPERTION_PRICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONS\FRM_MEDICAL_HISTORY.resx">
+      <DependentUpon>FRM_MEDICAL_HISTORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONS\FRM_PERSON_IMAGE.resx">
+      <DependentUpon>FRM_PERSON_IMAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\CRT_PRINT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRT_PRINT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\FADEIN_FADEOUT1.resx">
+      <DependentUpon>FADEIN_FADEOUT1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\FRM_LOGIN.resx">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_IMGE_PRSN.resx">
+      <DependentUpon>FRM_IMGE_PRSN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\FRM_MAIN.resx">
+      <DependentUpon>FRM_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONS\FRM_CONVERT_TO_DOCT.resx">
+      <DependentUpon>FRM_CONVERT_TO_DOCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONS\FRM_PERSON.resx">
+      <DependentUpon>FRM_PERSON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONS\FRM_SEARCH_PERSON.resx">
+      <DependentUpon>FRM_SEARCH_PERSON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONS\FRM_SEARCH_PER_FOR_CBOX.resx">
+      <DependentUpon>FRM_SEARCH_PER_FOR_CBOX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\FRM_PRINT_bOOK.resx">
+      <DependentUpon>FRM_PRINT_bOOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\FRM_TOOTH_PRINT.resx">
+      <DependentUpon>FRM_TOOTH_PRINT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PPRINT_PURCHES\FRM_PURCHES_TOWDATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PPRINT_PURCHES\FRM_RPT_PRUCHES_F.resx">
+      <DependentUpon>FRM_RPT_PRUCHES_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PPRINT_PURCHES\FRM_RPT_PURCHES_ONE_DATE_F.resx">
+      <DependentUpon>FRM_RPT_PURCHES_ONE_DATE_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PPRINT_PURCHES\FRM_RPT_PURCHES_TOW_DATE_F.resx">
+      <DependentUpon>FRM_RPT_PURCHES_TOW_DATE_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PPRINT_PURCHES\RPT_PRUCHES_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PPRINT_PURCHES\RPT_PURCHES_ONE_DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINTT.resx">
+      <DependentUpon>PRINTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_BOOKTYPE\FRM_ONE_DATE_BOOOKT.resx">
+      <DependentUpon>FRM_ONE_DATE_BOOOKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_BOOKTYPE\PRT_BOOKING_T_1DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_BOOKTYPE\RPT_BOOKING_2DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_BOOKTYPE\RPT_BOOKING_TYPE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_MONEY\FRM_MOEY_G.resx">
+      <DependentUpon>FRM_MOEY_G.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_MONEY\FRM_MONEY_TOW_DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_MONEY\RPT_MONEY_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_MONEY\FRM_MONEY_ONE_DATE.resx">
+      <DependentUpon>FRM_MONEY_ONE_DATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_MONEY\FRM_MONEY_TOW_DATE.resx">
+      <DependentUpon>FRM_MONEY_TOW_DATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_MONEY\RPT_MONEY_ONE_DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_G.resx">
+      <DependentUpon>FRM_PER_MON_G.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_ONE_DATE.resx">
+      <DependentUpon>FRM_PER_MON_ONE_DATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_PERSON_MONEY\FRM_PER_MON_TOW_DATE.resx">
+      <DependentUpon>FRM_PER_MON_TOW_DATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_PERSON_MONEY\RPT_PER_MON_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_PERSON_MONEY\RPT_PER_MON_ONE_DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_PERSON_MONEY\RPT_PER_MON_TOW_DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_RACHETA.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_BOOKTYPE\FRM_TOW_DATE_BOOKING_t.resx">
+      <DependentUpon>FRM_TOW_DATE_BOOKING_t.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_BOOKTYPE\FRM_PRINT_BOOKT_G.resx">
+      <DependentUpon>FRM_PRINT_BOOKT_G.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_SALES\FRM_DOCTOR_SEAL.resx">
+      <DependentUpon>FRM_DOCTOR_SEAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_SALES\FRM_RPT_SALES_F.resx">
+      <DependentUpon>FRM_RPT_SALES_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_SALES\FRM_RPT_SALES_ONE_DATE_F.resx">
+      <DependentUpon>FRM_RPT_SALES_ONE_DATE_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_SALES\FRM_RPT_SALES_TOW_DATE_F.resx">
+      <DependentUpon>FRM_RPT_SALES_TOW_DATE_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_SALES\FRM_SALES_CATEG.resx">
+      <DependentUpon>FRM_SALES_CATEG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PRINT_SALES\RPT_SALES_CATEG.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_SALES\RPT_SALES_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_SALES\RPT_SALES_ONE_DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_SALES\RPT_SALES_TOW_DATE_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRINT_SALES\RPT_SEALS_DOCT_F.rdlc" />
+    <EmbeddedResource Include="PRINT\PRIN_BOOKING.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRIN_BOOKING.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PROFIT\FRM_PROFIT.resx">
+      <DependentUpon>FRM_PROFIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\PROFIT\PROFIT.rdlc" />
+    <EmbeddedResource Include="PRINT\Report1.rdlc" />
+    <EmbeddedResource Include="PRINT\TEST.resx">
+      <DependentUpon>TEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINT\TOOTH_BOOKING_PRINT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TOOTH_BOOKING_PRINT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PURCHES\FRM_PURCHERS.resx">
+      <DependentUpon>FRM_PURCHERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEWFRM_PRINT.resx">
+      <DependentUpon>NEWFRM_PRINT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHES\FRM_SEARCH_PURCHES.resx">
+      <DependentUpon>FRM_SEARCH_PURCHES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_BOOKING_DISEAS.resx">
+      <DependentUpon>FRM_BOOKING_DISEAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_BOOKING_DOCTOR.resx">
+      <DependentUpon>FRM_BOOKING_DOCTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_BOOKING_PERSON.resx">
+      <DependentUpon>FRM_BOOKING_PERSON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_BOOKING_TYPE.resx">
+      <DependentUpon>FRM_BOOKING_TYPE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_IMAGE_.resx">
+      <DependentUpon>FRM_IMAGE_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_KSHFIA_TYPE.resx">
+      <DependentUpon>FRM_KSHFIA_TYPE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_PROFIT.resx">
+      <DependentUpon>FRM_PROFIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_PURCHES_RPT.resx">
+      <DependentUpon>FRM_PURCHES_RPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_RPT.resx">
+      <DependentUpon>FRM_RPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_RPT_BOOK_TYPE.resx">
+      <DependentUpon>FRM_RPT_BOOK_TYPE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_RPT_MONY_AVAL.resx">
+      <DependentUpon>FRM_RPT_MONY_AVAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_RPT_PERSON_MONEY.resx">
+      <DependentUpon>FRM_RPT_PERSON_MONEY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_RPT_SALES.resx">
+      <DependentUpon>FRM_RPT_SALES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_R_BOX.resx">
+      <DependentUpon>FRM_R_BOX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_R_BUTY.resx">
+      <DependentUpon>FRM_R_BUTY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_R_OPERATONS.resx">
+      <DependentUpon>FRM_R_OPERATONS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_R_SALES_PURCH.resx">
+      <DependentUpon>FRM_R_SALES_PURCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_REPORT_TOOTH.resx">
+      <DependentUpon>FRM_REPORT_TOOTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\FRM_R_TOOTH.resx">
+      <DependentUpon>FRM_R_TOOTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\FRM_SEARCH_ACCOUNT.resx">
+      <DependentUpon>FRM_SEARCH_ACCOUNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\FRM_SANAD.resx">
+      <DependentUpon>FRM_SANAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\FRM_SEARCH_SANAD.resx">
+      <DependentUpon>FRM_SEARCH_SANAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEACRH_LOGIN.resx">
+      <DependentUpon>FRM_SEACRH_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_CLIENT.resx">
+      <DependentUpon>FRM_SEARCH_CLIENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_EXPENSES.resx">
+      <DependentUpon>FRM_SEARCH_EXPENSES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_BOOKING_T.resx">
+      <DependentUpon>FRM_SEARCH_BOOKING_T.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_DESC.resx">
+      <DependentUpon>FRM_SEARCH_DESC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_DIAESE.resx">
+      <DependentUpon>FRM_SEARCH_DIAESE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_DRAGE.resx">
+      <DependentUpon>FRM_SEARCH_DRAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_ERRADAT.resx">
+      <DependentUpon>FRM_SEARCH_ERRADAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_GRP_DRAG.resx">
+      <DependentUpon>FRM_SEARCH_GRP_DRAG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_IMG_PER.resx">
+      <DependentUpon>FRM_SEARCH_IMG_PER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_ITEMS.resx">
+      <DependentUpon>FRM_SEARCH_ITEMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_MAJOR.resx">
+      <DependentUpon>FRM_SEARCH_MAJOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_CATEGORIES.resx">
+      <DependentUpon>FRM_SEARCH_CATEGORIES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_DOCTOR.resx">
+      <DependentUpon>FRM_SEARCH_DOCTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_STATE.resx">
+      <DependentUpon>FRM_SEARCH_STATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SANAD\SEARCH\FRM_SEARCH_TOOHT_DRAG.resx">
+      <DependentUpon>FRM_SEARCH_TOOHT_DRAG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SELAS\FRM_SEALS.resx">
+      <DependentUpon>FRM_SEALS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SELAS\FRM_SEARCH_ORDER.resx">
+      <DependentUpon>FRM_SEARCH_ORDER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SELAS\FRM_SEARCH_SELAS.resx">
+      <DependentUpon>FRM_SEARCH_SELAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_BOOK_TYPE.resx">
+      <DependentUpon>FRM_BOOK_TYPE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_BOX_SETTINGS.resx">
+      <DependentUpon>FRM_BOX_SETTINGS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_BUTY_SETTINGS.resx">
+      <DependentUpon>FRM_BUTY_SETTINGS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_CATEGORIS.resx">
+      <DependentUpon>FRM_CATEGORIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_CLIENT.resx">
+      <DependentUpon>FRM_CLIENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_DESC.resx">
+      <DependentUpon>FRM_DESC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_DISEASE.resx">
+      <DependentUpon>FRM_DISEASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_DOCTOR_SETTING.resx">
+      <DependentUpon>FRM_DOCTOR_SETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_DRAGE.resx">
+      <DependentUpon>FRM_DRAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_DRAG_TOOTH.resx">
+      <DependentUpon>FRM_DRAG_TOOTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_EXPENSES.resx">
+      <DependentUpon>FRM_EXPENSES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_GENERAL_SETTING.resx">
+      <DependentUpon>FRM_GENERAL_SETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_GROUP_DRAG.resx">
+      <DependentUpon>FRM_GROUP_DRAG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_INCOMING.resx">
+      <DependentUpon>FRM_INCOMING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_ITEM.resx">
+      <DependentUpon>FRM_ITEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_ITEMS_SETTINGS.resx">
+      <DependentUpon>FRM_ITEMS_SETTINGS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_LIST_PRINTER.resx">
+      <DependentUpon>FRM_LIST_PRINTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_MAJOR.resx">
+      <DependentUpon>FRM_MAJOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_NEW_SETTING.resx">
+      <DependentUpon>FRM_NEW_SETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_SETTING.resx">
+      <DependentUpon>FRM_SETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_SET_DOCOTR_PRICE.resx">
+      <DependentUpon>FRM_SET_DOCOTR_PRICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_STATE.resx">
+      <DependentUpon>FRM_STATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_STORE.resx">
+      <DependentUpon>FRM_STORE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FRM_TOOTH_SETTING.resx">
+      <DependentUpon>FRM_TOOTH_SETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_CLASS_TOOTH.resx">
+      <DependentUpon>FRM_CLASS_TOOTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_SEARCH_CLASS_T.resx">
+      <DependentUpon>FRM_SEARCH_CLASS_T.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_SEARCH_TOOTH_CLASS.resx">
+      <DependentUpon>FRM_SEARCH_TOOTH_CLASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_SEARCH_TREATMENT.resx">
+      <DependentUpon>FRM_SEARCH_TREATMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_SEARCH_TREATMENT_T.resx">
+      <DependentUpon>FRM_SEARCH_TREATMENT_T.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_TOOTH.resx">
+      <DependentUpon>FRM_TOOTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_TREATMENT_TOOTH.resx">
+      <DependentUpon>FRM_TREATMENT_TOOTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOTH_OP\FRM_X_RAY.resx">
+      <DependentUpon>FRM_X_RAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERSE\FRM_SEARCH_USERS.resx">
+      <DependentUpon>FRM_SEARCH_USERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERSE\FRM_USERS.resx">
+      <DependentUpon>FRM_USERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MEDICALCLINIC_TemporaryKey.pfx" />
+    <None Include="MEDICAL_CLINIC_DBDataSet.xsc">
+      <DependentUpon>MEDICAL_CLINIC_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MEDICAL_CLINIC_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MEDICAL_CLINIC_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MEDICAL_CLINIC_DBDataSet.xss">
+      <DependentUpon>MEDICAL_CLINIC_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cardiogram.ico" />
+    <Content Include="icoooo.ico" />
+    <Content Include="lib\Assembly.Software.Profile.dll" />
+    <Content Include="lib\Assembly.Software.Profile.xml" />
+    <Content Include="NuGet.exe" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\user-silhouette %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.CodeRush.Core">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DXCore.Parser">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="EnvDTE80">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Extensibility">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.MSXML">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Diagnostics.PerformanceProvider">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.GraphModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell.Interop">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.TextManager.Interop">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.TextManager.Interop.8.0">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.132\build\Microsoft.VisualStudio.Threading.Analyzers.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.132\build\Microsoft.VisualStudio.Threading.Analyzers.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.132\build\Microsoft.VisualStudio.Threading.Analyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.132\build\Microsoft.VisualStudio.Threading.Analyzers.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.16\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.16\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.16\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.SDK.EmbedInteropTypes.15.0.16\build\Microsoft.VisualStudio.SDK.EmbedInteropTypes.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
