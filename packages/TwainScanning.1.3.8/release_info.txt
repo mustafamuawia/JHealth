@@ -1,0 +1,3 @@
+Bug Fixes:
+- Avoided throwing exceptions for TWAIN messages which will not be processed
+- Breaking change: Aligned all numeric values of TwRC enum to be hexadecimal, values for TwRC.Busy and TwRC.ScannerLocked changed from decimal to hexadecimal
